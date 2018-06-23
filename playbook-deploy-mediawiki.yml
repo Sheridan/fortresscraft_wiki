@@ -1,0 +1,374 @@
+---
+- hosts: wiki
+  become: yes
+  become_user: "{{ wiki_user }}"
+  vars:
+    work_directory: /home/{{ wiki_user }}/packages/mediawiki
+    prod_directory: "/home/{{ wiki_user }}/production/mediawiki"
+    skins_directory: "{{ prod_directory }}/skins"
+    extensions_directory: "{{ prod_directory }}/extensions"
+    fce_directory: "{{ prod_directory }}/fce"
+    mediawiki_version:
+      major: 1
+      minor: 30
+      build: 0
+    extensions:
+      - { repo: "https://github.com/wikimedia/mediawiki-extensions-googleAnalytics", name: googleAnalytics, ver: REL1_30 }
+      - { repo: "https://github.com/wikimedia/mediawiki-extensions-GoogleAnalyticsMetrics", name: GoogleAnalyticsMetrics, ver: REL1_30 }
+      - { repo: "https://github.com/wikimedia/mediawiki-extensions-YouTube", name: YouTube, ver: REL1_30 }
+      - { repo: "https://github.com/wikimedia/mediawiki-extensions-Widgets", name: Widgets, ver: REL1_30 }
+      - { repo: "https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector", name: UniversalLanguageSelector, ver: REL1_30 }
+      # - { repo: "https://github.com/wikimedia/mediawiki-extensions-WikiEditor", name: WikiEditor, ver: REL1_30 }
+    skins:
+      - { repo: "https://github.com/dolfinus/DarkVector.git", name: DarkVector, ver: HEAD }
+  vars_files:
+    - vars.yml
+
+  pre_tasks:
+    - name: Генерируем имя архива
+      set_fact:
+        mediawiki_archive_name: "mediawiki-{{ mediawiki_version.major }}.{{ mediawiki_version.minor }}.{{ mediawiki_version.build }}.tar.gz"
+
+  tasks:
+
+    - name: Установка нужного софта
+      apt:
+        name: "{{ item }}"
+        update_cache: yes
+        state: latest
+      with_items:
+        - mariadb-server
+        - nginx
+        - php7.0-fpm
+        - php7.0-mbstring
+        - php7.0-gd
+        - php7.0-xml
+        - php7.0-mysql
+        - php7.0-intl
+        - php-apcu
+        - imagemagick
+        - python-mysqldb
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Создание директорий
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: 0755
+        owner: "{{ wiki_user }}"
+        group: users
+      with_items:
+        - "/home/wiki/packages"
+        - "{{ work_directory }}"
+        - "{{ log_directory }}"
+        - "{{ prod_directory }}"
+        - "{{ skins_directory }}"
+        - "{{ fce_directory }}"
+        - "{{ extensions_directory }}"
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: "Качаем {{ mediawiki_archive_name }}"
+      get_url:
+        url: "https://releases.wikimedia.org/mediawiki/{{ mediawiki_version.major }}.{{ mediawiki_version.minor }}/{{ mediawiki_archive_name }}"
+        dest: "{{ work_directory }}"
+      tags:
+        - init
+
+    - name: Распаковываем скачанное
+      unarchive:
+        src: "{{ work_directory }}/{{ mediawiki_archive_name }}"
+        dest: "{{ work_directory }}"
+        remote_src: yes
+      tags:
+        - init
+
+    - name: Удаляем скачанное
+      file:
+        path: "{{ work_directory }}/{{ mediawiki_archive_name }}"
+        state: absent
+      tags:
+        - init
+
+    - name: Удаляем текущий сайт
+      file:
+        path: "{{ site_directory }}/"
+        state: absent
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Создаём директорию сайта
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: 0755
+        owner: "{{ wiki_user }}"
+        group: users
+      with_items:
+        - "{{ site_directory }}"
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Перемещаем сайт на место
+      shell: mv {{ work_directory }}/mediawiki-*/* {{ site_directory }}
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Клонируем расширения из гита
+      git:
+        repo: "{{ item.repo }}"
+        dest: "{{ extensions_directory }}/{{ item.name }}"
+        version: "{{ item.ver }}"
+        force: yes
+        track_submodules: yes
+      with_items: "{{ extensions }}"
+      tags:
+        - init
+        - extensions
+
+    - name: Клонируем скины из гита
+      git:
+        repo: "{{ item.repo }}"
+        dest: "{{ skins_directory }}/{{ item.name }}"
+        version: "{{ item.ver }}"
+        force: yes
+        track_submodules: yes
+      with_items: "{{ skins }}"
+      tags:
+        - init
+        - skins
+
+    - name: Линкум конфиг
+      file:
+        src: "{{ prod_directory }}/{{ item }}"
+        path: "{{ site_directory }}/{{ item }}"
+        state: link
+      with_items:
+        - LocalSettings.php
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Линкум скины
+      file:
+        src: "{{ skins_directory }}/{{ item.name }}"
+        path: "{{ site_directory }}/skins/{{ item.name }}"
+        state: link
+      with_items: "{{ skins }}"
+      become: yes
+      become_user: root
+      tags:
+        - init
+        - skins
+
+    - name: Линкум расширения
+      file:
+        src: "{{ extensions_directory }}/{{ item.name }}"
+        path: "{{ site_directory }}/extensions/{{ item.name }}"
+        state: link
+      with_items: "{{ extensions }}"
+      become: yes
+      become_user: root
+      tags:
+        - init
+        - extensions
+
+    - name: Удаляем пустую картинную директорию
+      file:
+        path: "{{ site_directory }}/images"
+        state: absent
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Линкум нашу картинную директорию
+      file:
+        src: "{{ prod_directory }}/images"
+        path: "{{ site_directory }}/images"
+        state: link
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Выливаем FCE контент в сервер
+      synchronize:
+        src: media
+        dest: "{{ fce_directory }}"
+        recursive: yes
+        delete: yes
+      tags:
+        - init
+        - fce_code
+
+    - name: Компилируем less в css
+      shell: "lesscpy {{ item.src }} > {{ item.dst }} 2>/dev/null"
+      delegate_to: localhost
+      with_items:
+        - { src: "mediawiki/extensions/fce/styles/ext.fce.less", dst: "mediawiki/extensions/fce/styles/ext.fce.css" }
+        - { src: "mediawiki/extensions/fce/styles/fce.common.less", dst: "mediawiki/extensions/fce/styles/fce.common.css" }
+        - { src: "mediawiki/extensions/fce/styles/icons.less", dst: "mediawiki/extensions/fce/styles/icons.css" }
+      tags:
+        - fce_code
+      become: yes
+      become_user: sheridan
+
+    - name: Выливаем FCE расширения в сервер
+      synchronize:
+        src: "mediawiki/extensions/{{ item }}"
+        dest: "{{ site_directory }}/extensions"
+      with_items:
+        - fce
+      become: yes
+      become_user: root
+      tags:
+        - init
+        - fce_code
+
+    - name: Линкум FCE контент
+      file:
+        src: "{{ fce_directory }}/media"
+        path: "{{ site_directory }}/fce"
+        state: link
+      become: yes
+      become_user: root
+      tags:
+        - init
+
+    - name: Устанавливаем конфиги
+      template:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        owner: root
+        group: root
+        mode: 0644
+      with_items:
+        - { src: templates/mediawiki.nginx.conf, dest: /etc/nginx/nginx.conf }
+        - { src: templates/mediawiki.php.ini, dest: /etc/php/7.0/fpm/php.ini }
+        - { src: templates/mediawiki.php-fpm.conf, dest: /etc/php/7.0/fpm/php-fpm.conf }
+        - { src: templates/mediawiki.mariadb.conf, dest: /etc/mysql/mariadb.cnf }
+        - { src: templates/mediawiki.LocalSettings.php, dest: "{{ prod_directory }}/LocalSettings.php" }
+        - { src: templates/mediawiki.robots.txt, dest: "{{ site_directory }}/robots.txt" }
+      become: yes
+      become_user: root
+      tags:
+        - configuration
+        - extensions
+        - skins
+
+    # - name: dir
+    #   debug:
+    #     msg: "{{ wiki_user }}"
+    #   tags:
+    #     - init
+    #     - extensions
+    #     - skins
+    #     - configuration
+
+    - name: Устанавливаем права
+      file:
+        dest: "{{ site_directory }}"
+        owner: "{{ wiki_user }}"
+        group: www-data
+        mode: u=rwX,g=rwX,o=rX
+        recurse: yes
+      become: yes
+      become_user: root
+      tags:
+        - init
+        - extensions
+        - skins
+        - configuration
+
+    - name: Рестартуем и энаблим сервисы
+      service:
+        name: "{{ item }}"
+        state: restarted
+        enabled: yes
+      become: yes
+      become_user: root
+      with_items:
+        - php7.0-fpm
+        - mysql
+        - nginx
+      tags:
+        - init
+        - restart
+        - configuration
+
+    - name: Прикручиваем пароль рута для мускуля
+      mysql_user:
+        name: root
+        password: "{{ mysql.users.root.password }}"
+        host: "{{ item }}"
+        check_implicit_admin: yes
+        state: present
+      with_items: "{{ localhosts }}"
+      become: yes
+      become_user: root
+      tags:
+        - init
+        - database
+
+    - name: Создаём БД для вики
+      mysql_db:
+        name: "{{ mysql.database }}"
+        state: present
+        login_user: root
+        login_password: "{{ mysql.users.root.password }}"
+      become: yes
+      become_user: root
+      register: db_created
+      tags:
+        - init
+        - database
+
+    - name: Удаляем анонимусов из марии
+      mysql_user:
+        name: ''
+        host_all: yes
+        state: absent
+        login_user: root
+        login_password: "{{ mysql.users.root.password }}"
+      become: yes
+      become_user: root
+      when: db_created.changed
+      tags:
+        - init
+        - database
+
+    - name: Создаём wiki юзера
+      mysql_user:
+        name: "{{ mysql.users.wiki.login }}"
+        password: "{{ mysql.users.wiki.password }}"
+        priv: "{{ mysql.database }}.*:ALL"
+        host: "{{ item }}"
+        state: present
+      with_items: "{{ localhosts }}"
+      become: yes
+      become_user: root
+      when: db_created.changed
+      tags:
+        - init
+        - database
+
+
+
+# Capitan_Sheridan
+# RHnfhMf4RuznS2nBqC95acZyGzysB99p
+
+# Sheridan
+# EqXh3GcTTjkwqDpFT3yWHseum8Lspud5

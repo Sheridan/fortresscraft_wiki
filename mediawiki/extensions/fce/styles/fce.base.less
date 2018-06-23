@@ -1,0 +1,36 @@
+@default-border-color:      rgba(10, 1, 36, 0.1);
+@default-background-color:  rgba(255,255,255,0.1);
+@dark-background-color:     rgba(0, 7, 53, 0.5);
+@default-shadow-color:      rgba(80, 61, 61, 0.014);
+
+@black: black;
+@white: white;
+
+.bracked_border(@radius) {
+    border-right-style: solid;
+    border-left-style: solid;
+    border-radius: @radius;
+    border-width: 1px;
+}
+
+.fce_icons(@x, @y, @w, @h) {
+    background-repeat: no-repeat;
+    background-position: @x*-1px @y*-1px;
+    width: @w*1px;
+    height: @h*1px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.fce_icons_64(@x, @y, @w, @h) {
+    background-image: url('/fce/sprites/BlockPreview_P20_64.png');
+    .fce_icons(@x, @y, @w, @h);
+}
+.fce_icons_32(@x, @y, @w, @h) {
+    background-image: url('/fce/sprites/BlockPreview_P20_32.png');
+    .fce_icons(@x, @y, @w, @h);
+}
+.fce_icons_16(@x, @y, @w, @h) {
+    background-image: url('/fce/sprites/BlockPreview_P20_16.png');
+    .fce_icons(@x, @y, @w, @h);
+}

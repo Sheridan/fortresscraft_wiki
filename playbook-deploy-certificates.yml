@@ -1,0 +1,112 @@
+- hosts: wiki
+  become: yes
+  become_user: root
+  vars_files:
+    - vars.yml
+  vars:
+    letsencrypt_lego_version: v0.4.0
+    letsencrypt_lego_path: /opt/lego
+    letsencrypt:
+        - { email: "gorlov.maxim@gmail.com", domains: "{{ server_names }}" }
+
+    letsencrypt_lego_webroot: /var/www/letsencrypt
+    letsencrypt_lego_args: "--path {{ letsencrypt_lego_path }}"
+    letsencrypt_crontab_mailto: "gorlov.maxim@gmail.com"
+    crond_after_update_command: "/usr/sbin/service nginx reload | logger -t lego"
+    crond_renew_time: "0 3 * * 0"
+    crond_update_time: "10 1 * * 0"
+    lego_dist_file: "/opt/lego_{{ansible_system|lower}}_{{lego_arch}}.tar.xz"
+    lego_binpath: "{{letsencrypt_lego_path}}/lego/lego_{{ansible_system|lower}}_{{lego_arch}}"
+
+  tasks:
+    - name: Определяем архитектуру
+      set_fact:
+        lego_arch: amd64
+      when: ansible_userspace_architecture == "x86_64"
+
+    - name: Создаём каталоги
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: 0755
+      with_items:
+        - "{{ letsencrypt_lego_path }}"
+        - "{{ letsencrypt_lego_path }}/lego"
+
+    - name: Создаём webroot
+      file:
+        path: "{{ letsencrypt_lego_webroot }}"
+        state: directory
+        mode: 0755
+        owner: www-data
+        group: www-data
+      when: letsencrypt_lego_webroot is defined
+
+    - name: Качаем lego
+      get_url:
+        url: "https://github.com/xenolf/lego/releases/download/{{letsencrypt_lego_version}}/lego_{{ansible_system|lower}}_{{lego_arch}}.tar.xz"
+        dest: "{{ lego_dist_file }}"
+
+    - name: Распаковываем lego
+      unarchive:
+        src: "{{ lego_dist_file }}"
+        dest: "{{letsencrypt_lego_path}}/lego"
+        remote_src: yes
+      when: not ansible_check_mode
+
+    - name: Удаляем архив
+      file:
+        state: absent
+        path: "{{ lego_dist_file }}"
+
+    - name: Гененрируем команду регистрации
+      set_fact:
+        register_cmds: "{%- set generation_indexes = [] -%}
+                          {%- for san_dict in letsencrypt -%}
+                              {%- set i = loop.index0 -%}
+                              {%- for domain in san_dict.domains -%}
+                                      {%- if i not in generation_indexes -%}{%- if generation_indexes.append(i) -%}{%- endif -%}{%- endif -%}
+                              {%- endfor -%}
+                          {%- endfor -%}
+                          {%- for i in generation_indexes -%}
+                              {{ lego_binpath }} -a --email {{ letsencrypt[i].email }} --http-timeout 60
+                              {%- for domain in letsencrypt[i].domains -%}
+                                  {{ ' ' }}--domains \"{{ domain }}\"
+                              {%- endfor -%}
+                              {{ ' ' }}
+                                  --webroot {{ letsencrypt_lego_webroot }} {{letsencrypt_lego_args}}
+                              {{ '\n' if not loop.last else '' }}
+                          {%- endfor -%}"
+      tags: lego_install_cronjobs
+
+    - name: Комманда, которую будем выполнять
+      debug: var=register_cmds.split('\n')
+      tags:
+        - dontgen
+        - lego_install_cronjobs
+
+    - name: Останавливаем nginx
+      service:
+        name: nginx
+        state: stopped
+
+    - name: Поехали!
+      command: "{{ item }} -http :80 run"
+      args:
+        chdir: "{{ letsencrypt_lego_path }}"
+      with_items: "{{ register_cmds.split('\n') }}"
+      when: not ansible_check_mode
+
+    - name: Запускаем nginx
+      service:
+        name: nginx
+        state: started
+
+    - name: Добавляем задачу в крон
+      template:
+        src: templates/cron-certificates.j2
+        dest: /etc/cron.d/certificates
+        owner: root
+        group: root
+        mode: 0644
+      tags: lego_install_cronjobs

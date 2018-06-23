@@ -1,0 +1,116 @@
+@import "fce.base.less";
+
+.overflow_container {
+    position: relative;
+    display: inline;
+}
+
+.overflow_text {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    font-weight: bolder;
+    font-size: small;
+    text-shadow: -2px -2px 3px @black, 2px 2px 3px @black;
+    color: @white;
+}
+
+div  {
+    .item_shadowbox {
+        width: 20%;
+        float: right;
+        border: 1px solid @default-border-color;
+        box-shadow: 3px 3px 1px @default-shadow-color;
+        padding: 3px 5px;
+        background-color: @default-background-color;
+        margin-left: 10px;
+    }
+    .fce_craft_ingridient {
+        .overflow_container;
+    }
+    .fce_ingridient_amount {
+        .overflow_text;
+    }
+    .fce_craft_result {
+        .overflow_container;
+    }
+    .fce_craft_result_amount {
+        .overflow_text;
+    }
+    .fce_craft_assembler {
+        display: inline-block;
+        margin-right: 5px;
+        .bracked_border(5px);
+    }
+    .fce_craft_receipt {
+        padding: 5px 5px 5px 5px;
+        .bracked_border(10px);
+    }
+    .fce_receipts {
+        border-width: 1px;
+    }
+    .fce_participate {
+        margin: auto;
+        text-align: center;
+    }
+    .fce_participate_item {
+        float: left;
+        margin: 3px 3px 3px 3px;
+    }
+    .fce_formula{
+        display: inline;
+        margin: 3px 3px 3px 3px;
+    }
+    .fce_description {
+        text-align: justify;
+    }
+    &.fce_preview_icon {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+span {
+    &.block_caption
+    {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+    }
+    &.info_title
+    {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        font-size: large;
+    }
+}
+
+table {
+    &.fce_property_table {
+        width: 80%;
+        margin: auto;
+        tr {
+            td {
+                border-bottom: 1px solid;
+                &.fce_property_name
+                {
+                    text-align: right;
+                    padding-right: 10px;
+                    width: 50%;
+                }
+                &.fce_property_value
+                {
+                    text-align: left;
+                    padding-left: 10px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
+

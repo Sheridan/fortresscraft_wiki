@@ -1,0 +1,102 @@
+@import "fce.base.less";
+
+span {
+    &.kb_shortcut {
+        border: 1px solid @default-border-color;
+        border-radius: 2px;
+        font-family: monospace;
+        text-transform: capitalize;
+        font-size: larger;
+        background-color: @dark-background-color;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        font-weight: bolder;
+    }
+}
+
+
+div {
+    &.tooltipped
+    {
+        position: relative;
+        display: inline-block;
+        span {
+            &.tooltip_content {
+                visibility: hidden;
+                width: max-content;
+                background-color: @dark-background-color;
+                // color: @white;
+                border-radius: 6px;
+                padding: 5px 5px 5px 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 90%;
+                transition: opacity 0.3s;
+                border-color: @default-background-color;
+                border-width: 1px;
+                // border-style: solid;
+                left: 50%;
+                transform: translateX(-50%);
+                &:after {
+                    border: solid;
+                    border-color: rgba(0,7,53,0.14) transparent;
+                    border-width: 8px 8px 0 0;
+                    top: 100%;
+                    content: "";
+                    left: 50%;
+                    position: absolute;
+                }
+            }
+        }
+        &:hover {
+            span {
+                &.tooltip_content {
+                    visibility: visible;
+                    // &::after {
+                    //     left: 50%;
+                    //     transform: translateX(-50%);
+                    //     content: "";
+                    // }
+                }
+            }
+        }
+    }
+    &.tooltip_info {
+        span {
+            &.tooltip_name {
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                display: block;
+            }
+            &.tooltip_copy {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}
+span {
+    &.copy_to_clipboard {
+        cursor: pointer;
+        font-weight: bold;
+        font-family: monospace;
+        background-color: @dark-background-color;
+        border: 1px solid @default-border-color;
+        border-radius: 2px;
+        font-size: larger;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+img {
+    &.item_icon {
+        vertical-align: text-top;
+    }
+}

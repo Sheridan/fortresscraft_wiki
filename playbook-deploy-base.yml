@@ -1,0 +1,99 @@
+---
+- hosts: wiki
+  become: yes
+  become_user: root
+  roles:
+     - ansible-role-sendmail
+  vars_files:
+    - vars.yml
+
+  tasks:
+
+    - name: Установка софта
+      apt:
+        name: "{{ item }}"
+        update_cache: yes
+        state: latest
+      with_items:
+        - mc
+        - git
+        - zsh
+        - htop
+        - pydf
+        - tmux
+        - dnsutils
+        - iptables-persistent
+        - netfilter-persistent
+
+    - name: Создание wiki пользователя
+      user:
+        name: "{{ wiki_user }}"
+        shell: /usr/bin/zsh
+        group: users
+        groups: users, www-data
+        generate_ssh_key: yes
+
+    - name: Укладываем ключи в wiki пользователя
+      authorized_key:
+        user: "{{ wiki_user }}"
+        state: present
+        key: '{{ item }}'
+      with_file:
+        - /home/sheridan/.ssh/id_ed25519.pub
+        - /home/sheridan/.ssh/id_rsa.pub
+
+    - name: Клонируем oh-my-zsh в пользователя wiki
+      git:
+        repo: https://github.com/robbyrussell/oh-my-zsh
+        dest: ~/.oh-my-zsh
+      become: yes
+      become_user: "{{ wiki_user }}"
+
+    - name: Копирование конфига для zsh
+      copy:
+        src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+        dest: ~/.zshrc
+      become: yes
+      become_user: "{{ wiki_user }}"
+
+    - name: Копирование прочих конфигов
+      copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      become: yes
+      become_user: "{{ wiki_user }}"
+      with_items:
+        - { src: templates/htoprc, dest: "/home/{{ wiki_user }}/.config/htop/htoprc" }
+
+    - name: Установка темы для zsh
+      replace:
+        path: ~/.zshrc
+        regexp: 'ZSH_THEME=".+?"'
+        replace: 'ZSH_THEME="gianu"'
+      become: yes
+      become_user: "{{ wiki_user }}"
+
+    - name: Установка правил iptables
+      template:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      with_items:
+        - { src: templates/iptables.v4.j2, dest: /etc/iptables/rules.v4 }
+        - { src: templates/iptables.v6.j2, dest: /etc/iptables/rules.v6 }
+      notify: restart firewall
+
+  handlers:
+    - name: systemctl daemon-reload
+      command: systemctl daemon-reload
+
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+        enabled: yes
+
+    - name: restart firewall
+      service:
+        name: netfilter-persistent
+        state: restarted
+        enabled: yes

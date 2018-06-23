@@ -1,0 +1,622 @@
+digraph G {spiderbotdefences3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced SpiderBot Defences</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::spiderbotdefences3"><img src="icons/64/spiderbotdefences3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>150</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>100</td></tr></table></td>
+            </tr>
+            </table>>];
+locallifeforms [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Local Life Forms</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::locallifeforms"><img src="icons/64/locallifeforms.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Storage</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4assistmachines"><img src="icons/64/t4assistmachines.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::refinedliquidresin"><img src="icons/32/refinedliquidresin.png" /></td><td>Refined Liquid Resin</td><td>25</td></tr></table></td>
+            </tr>
+            </table>>];
+advancedcrystal [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Crystal Dynamics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::advancedcrystal"><img src="icons/64/advancedcrystal.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::crystaldeposit"><img src="icons/32/crystaldeposit.png" /></td><td>Crystal Deposit</td><td>200</td></tr></table></td>
+            </tr>
+            </table>>];
+roomspretty [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Room Aesthetics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::roomspretty"><img src="icons/64/roomspretty.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+orepings [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Improved Ore Scanning</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::orepings"><img src="icons/64/orepings.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+spiderbotdefences1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic SpiderBot Defences</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::spiderbotdefences1"><img src="icons/64/spiderbotdefences1.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+rooms2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Room Building</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::rooms2"><img src="icons/64/rooms2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::constructionpaste"><img src="icons/32/constructionpaste.png" /></td><td>Construction Paste</td><td>128</td></tr></table></td>
+            </tr>
+            </table>>];
+missiledefence [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Missile Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::missiledefence"><img src="icons/64/missiledefence.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>125</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>125</td></tr></table></td>
+            </tr>
+            </table>>];
+miningupgrade3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Intermediate Miner Upgrades I</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade3"><img src="icons/64/miningupgrade3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>15</td></tr></table></td>
+            </tr>
+            </table>>];
+minecarts3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Improved Minecart Logistics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::minecarts3"><img src="icons/64/minecarts3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>128</td></tr></table></td>
+            </tr>
+            </table>>];
+mothballed [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Mothballed</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::mothballed"><img src="icons/64/mothballed.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t2power [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Upgraded Power Grid</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t2power"><img src="icons/64/t2power.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t1power [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Power Grid</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t1power"><img src="icons/64/t1power.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4power [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Ultra-Power Grid</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4power"><img src="icons/64/t4power.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>75</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>50</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>75</td></tr></table></td>
+            </tr>
+            </table>>];
+miningupgrade6 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Bulk Miner Upgrades</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade6"><img src="icons/64/miningupgrade6.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>135</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>75</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>150</td></tr></table></td>
+            </tr>
+            </table>>];
+orbitalrailgun [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Orbital Railgun</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::orbitalrailgun"><img src="icons/64/orbitalrailgun.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::alloyedmachineblock"><img src="icons/32/alloyedmachineblock.png" /></td><td>Alloyed Machine Block</td><td>64</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::refinedliquidresin"><img src="icons/32/refinedliquidresin.png" /></td><td>Refined Liquid Resin</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+aesthetics [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Aesthetics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::aesthetics"><img src="icons/64/aesthetics.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+cargolift3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Bulk Cargo Lifts</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::cargolift3"><img src="icons/64/cargolift3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>256</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>256</td></tr></table></td>
+            </tr>
+            </table>>];
+minecarts2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Improved Minecarts</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::minecarts2"><img src="icons/64/minecarts2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>128</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>128</td></tr></table></td>
+            </tr>
+            </table>>];
+t1assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Automation</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t1assistmachines"><img src="icons/64/t1assistmachines.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4defence4 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Mobile CryoPlasm Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence4"><img src="icons/64/t4defence4.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::imbuedmachineblock"><img src="icons/32/imbuedmachineblock.png" /></td><td>Imbued Machine Block</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+t4defence1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic CryoPlasm Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence1"><img src="icons/64/t4defence1.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>64</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::imbuedmachineblock"><img src="icons/32/imbuedmachineblock.png" /></td><td>Imbued Machine Block</td><td>32</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+resinhandling [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Resin Handling</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::resinhandling"><img src="icons/64/resinhandling.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::softresin"><img src="icons/32/softresin.png" /></td><td>Soft Resin</td><td>25</td></tr></table></td>
+            </tr>
+            </table>>];
+orbitalpower [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Orbital Power Transmission</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::orbitalpower"><img src="icons/64/orbitalpower.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>125</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>125</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>125</td></tr></table></td>
+            </tr>
+            </table>>];
+robotics3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Intermediate Robotics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::robotics3"><img src="icons/64/robotics3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicpcb"><img src="icons/32/basicpcb.png" /></td><td>Basic PCB</td><td>32</td></tr></table></td>
+            </tr>
+            </table>>];
+t4defence2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Long Range CryoPlasm Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence2"><img src="icons/64/t4defence2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedsulphur"><img src="icons/32/compressedsulphur.png" /></td><td>Compressed Sulphur</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+coldresearch [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Cold Research</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::coldresearch"><img src="icons/64/coldresearch.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>10</td></tr></table></td>
+            </tr>
+            </table>>];
+cargolift2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Improved Cargo Lifts</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::cargolift2"><img src="icons/64/cargolift2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>15</td></tr></table></td>
+            </tr>
+            </table>>];
+basebuilding [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Base Building</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::basebuilding"><img src="icons/64/basebuilding.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+rocketry1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic Rocketry</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::rocketry1"><img src="icons/64/rocketry1.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::biomassgrowth"><img src="icons/32/biomassgrowth.png" /></td><td>Biomass</td><td>512</td></tr></table></td>
+            </tr>
+            </table>>];
+t4drills2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Efficient Vein Extraction</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4drills2"><img src="icons/64/t4drills2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::molybdenumbar"><img src="icons/32/molybdenumbar.png" /></td><td>Molybdenum Bar</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::chromiumbar"><img src="icons/32/chromiumbar.png" /></td><td>Chromium Bar</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedfreon"><img src="icons/32/compressedfreon.png" /></td><td>Compressed Freezon Canister</td><td>512</td></tr></table></td>
+            </tr>
+            </table>>];
+cyrogenicsresearch [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Cryogenics Research</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::cyrogenicsresearch"><img src="icons/64/cyrogenicsresearch.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>50</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>35</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>50</td></tr></table></td>
+            </tr>
+            </table>>];
+basedefence [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Base Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::basedefence"><img src="icons/64/basedefence.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t3assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Logistics and Storage</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t3assistmachines"><img src="icons/64/t3assistmachines.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>10</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>5</td></tr></table></td>
+            </tr>
+            </table>>];
+roomsherb [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Agriculture</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::roomsherb"><img src="icons/64/roomsherb.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+robotics1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic Robotics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::robotics1"><img src="icons/64/robotics1.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicpcb"><img src="icons/32/basicpcb.png" /></td><td>Basic PCB</td><td>32</td></tr></table></td>
+            </tr>
+            </table>>];
+crystal [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Crystal Dynamics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::crystal"><img src="icons/64/crystal.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>45</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>55</td></tr></table></td>
+            </tr>
+            </table>>];
+minecarts1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Rolling Stock</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::minecarts1"><img src="icons/64/minecarts1.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>25</td></tr></table></td>
+            </tr>
+            </table>>];
+spiderbotdefences2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Intermediate SpiderBot Defences</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::spiderbotdefences2"><img src="icons/64/spiderbotdefences2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>12</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>15</td></tr></table></td>
+            </tr>
+            </table>>];
+miningupgrade5 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Miner Upgrades</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade5"><img src="icons/64/miningupgrade5.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>35</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>15</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>50</td></tr></table></td>
+            </tr>
+            </table>>];
+alloys [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Metal Alloys</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::alloys"><img src="icons/64/alloys.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>10</td></tr></table></td>
+            </tr>
+            </table>>];
+robotics4 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Complex Robotics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::robotics4"><img src="icons/64/robotics4.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicpcb"><img src="icons/32/basicpcb.png" /></td><td>Basic PCB</td><td>32</td></tr></table></td>
+            </tr>
+            </table>>];
+t5assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Bulk Storage</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t5assistmachines"><img src="icons/64/t5assistmachines.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::refinedliquidresin"><img src="icons/32/refinedliquidresin.png" /></td><td>Refined Liquid Resin</td><td>150</td></tr></table></td>
+            </tr>
+            </table>>];
+rooms1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Room Building</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::rooms1"><img src="icons/64/rooms1.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t2assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic Logistics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t2assistmachines"><img src="icons/64/t2assistmachines.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>2</td></tr></table></td>
+            </tr>
+            </table>>];
+t4defence1a [shape=plaintext,label=<<table>
+            <tr><td colspan="2">CryoPlasm Defence Scanning</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence1a"><img src="icons/64/t4defence1a.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+t48lightsinthedark [shape=plaintext,label=<<table>
+            <tr><td colspan="2">8 lights in the dark</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t48lightsinthedark"><img src="icons/64/t48lightsinthedark.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::hiemalmachineblock"><img src="icons/32/hiemalmachineblock.png" /></td><td>Hiemal Machine Block</td><td>256</td></tr></table></td>
+            </tr>
+            </table>>];
+t5power [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Ultimate Power Grid</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t5power"><img src="icons/64/t5power.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>250</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>250</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>250</td></tr></table></td>
+            </tr>
+            </table>>];
+spiderbotlogistics1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic SpiderBot Logistics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::spiderbotlogistics1"><img src="icons/64/spiderbotlogistics1.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4defence3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Static CryoPlasm Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence3"><img src="icons/64/t4defence3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedchlorine"><img src="icons/32/compressedchlorine.png" /></td><td>Compressed Chlorine</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+halloween [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Spooky Aesthetics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::halloween"><img src="icons/64/halloween.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4start [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Frozen Factory Expansion</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4start"><img src="icons/64/t4start.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::alloyedmachineblock"><img src="icons/32/alloyedmachineblock.png" /></td><td>Alloyed Machine Block</td><td>64</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::overclockedcrystalclock"><img src="icons/32/overclockedcrystalclock.png" /></td><td>Overclocked Crystal Clock</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+roomsclean [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Clean Room Building</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::roomsclean"><img src="icons/64/roomsclean.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::constructionpaste"><img src="icons/32/constructionpaste.png" /></td><td>Construction Paste</td><td>1280</td></tr></table></td>
+            </tr>
+            </table>>];
+spiderbot [shape=plaintext,label=<<table>
+            <tr><td colspan="2">SpiderBot</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::spiderbot"><img src="icons/64/spiderbot.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+advancedresearch [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Laboratories</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::advancedresearch"><img src="icons/64/advancedresearch.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+robotics2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Simple Robotics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::robotics2"><img src="icons/64/robotics2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicpcb"><img src="icons/32/basicpcb.png" /></td><td>Basic PCB</td><td>32</td></tr></table></td>
+            </tr>
+            </table>>];
+t4particles [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Particulate Filtration</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4particles"><img src="icons/64/t4particles.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::molybdenumbar"><img src="icons/32/molybdenumbar.png" /></td><td>Molybdenum Bar</td><td>32</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::chromiumbar"><img src="icons/32/chromiumbar.png" /></td><td>Chromium Bar</td><td>32</td></tr></table></td>
+            </tr>
+            </table>>];
+advanceddefence [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::advanceddefence"><img src="icons/64/advanceddefence.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>75</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>75</td></tr></table></td>
+            </tr>
+            </table>>];
+t6assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Rapid Logistics</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t6assistmachines"><img src="icons/64/t6assistmachines.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedchlorine"><img src="icons/32/compressedchlorine.png" /></td><td>Compressed Chlorine</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedsulphur"><img src="icons/32/compressedsulphur.png" /></td><td>Compressed Sulphur</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedfreon"><img src="icons/32/compressedfreon.png" /></td><td>Compressed Freezon Canister</td><td>25</td></tr></table></td>
+            </tr>
+            </table>>];
+suitupgrades [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Suit Upgrading</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::suitupgrades"><img src="icons/64/suitupgrades.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4gtpower [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Geothermal Power</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4gtpower"><img src="icons/64/t4gtpower.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>100</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>100</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>100</td></tr></table></td>
+            </tr>
+            </table>>];
+t3power [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Advanced Power Grid</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t3power"><img src="icons/64/t3power.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>50</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>50</td></tr></table></td>
+            </tr>
+            </table>>];
+t4defence5 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Improved CryoPlasm Defence</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4defence5"><img src="icons/64/t4defence5.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::imbuedmachineblock"><img src="icons/32/imbuedmachineblock.png" /></td><td>Imbued Machine Block</td><td>64</td></tr></table></td>
+            </tr>
+            </table>>];
+anthropologicalosteology [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Anthropological Osteology</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::anthropologicalosteology"><img src="icons/64/anthropologicalosteology.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+biomass [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Hydrocarbon Recombination</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::biomass"><img src="icons/64/biomass.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>25</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>15</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>45</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>75</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>35</td></tr></table></td>
+            </tr>
+            </table>>];
+miningupgrade4 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Intermediate Miner Upgrades II</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade4"><img src="icons/64/miningupgrade4.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::simplifiedexperimentalpod"><img src="icons/32/simplifiedexperimentalpod.png" /></td><td>Simplified Experimental Pod</td><td>5</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::complexexperimentalpod"><img src="icons/32/complexexperimentalpod.png" /></td><td>Charged Experimental Pod</td><td>35</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::intermediateexperimentalpod"><img src="icons/32/intermediateexperimentalpod.png" /></td><td>Intermediate Experimental Pod</td><td>15</td></tr></table></td>
+            </tr>
+            </table>>];
+t0assistmachines [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Assembly Line Machines</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t0assistmachines"><img src="icons/64/t0assistmachines.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+miningupgrade2 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic Miner Upgrades II</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade2"><img src="icons/64/miningupgrade2.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::basicexperimentalpod"><img src="icons/32/basicexperimentalpod.png" /></td><td>Basic Experimental Pod</td><td>10</td></tr></table></td>
+            </tr>
+            </table>>];
+t4oreextracting [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Large Scale Vein Extraction</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4oreextracting"><img src="icons/64/t4oreextracting.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::ultimateexperimentalpod"><img src="icons/32/ultimateexperimentalpod.png" /></td><td>Ultimate Experimental Pod</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::xlexperimentalpod"><img src="icons/32/xlexperimentalpod.png" /></td><td>XL Experimental Pod</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::molybdenumore"><img src="icons/32/molybdenumore.png" /></td><td>Molybdenum Ore</td><td>1</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::chromiumore"><img src="icons/32/chromiumore.png" /></td><td>Chromium Ore</td><td>1</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::advancedexperimentalpod"><img src="icons/32/advancedexperimentalpod.png" /></td><td>Advanced Experimental Pod</td><td>512</td></tr></table></td>
+            </tr>
+            </table>>];
+blackbox [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Black Box Data</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::blackbox"><img src="icons/64/blackbox.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+miningupgrade1 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Basic Mining Upgrades I</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::miningupgrade1"><img src="icons/64/miningupgrade1.png" /></td>
+                <td></td>
+            </tr>
+            </table>>];
+t4magmabore [shape=plaintext,label=<<table>
+            <tr><td colspan="2">MagmaBore</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4magmabore"><img src="icons/64/t4magmabore.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::hiemalmachineblock"><img src="icons/32/hiemalmachineblock.png" /></td><td>Hiemal Machine Block</td><td>256</td></tr></table></td>
+            </tr>
+            </table>>];
+t4drills3 [shape=plaintext,label=<<table>
+            <tr><td colspan="2">Perfect Vein Extraction</td></tr>
+            <tr>
+                <td target="https://fortresscraft.info/index.php?title=FCEResearch::t4drills3"><img src="icons/64/t4drills3.png" /></td>
+                <td><table><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::molybdenumbar"><img src="icons/32/molybdenumbar.png" /></td><td>Molybdenum Bar</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::chromiumbar"><img src="icons/32/chromiumbar.png" /></td><td>Chromium Bar</td><td>512</td></tr><tr><td target="https://fortresscraft.info/index.php?title=FCEItem::compressedfreon"><img src="icons/32/compressedfreon.png" /></td><td>Compressed Freezon Canister</td><td>512</td></tr></table></td>
+            </tr>
+            </table>>];
+spiderbotdefences1 -> spiderbotdefences2;
+advancedresearch -> spiderbotdefences2;
+spiderbotdefences2 -> spiderbotdefences3;
+advancedresearch -> spiderbotdefences3;
+suitupgrades -> orepings;
+t0assistmachines -> orepings;
+minecarts1 -> minecarts2;
+aesthetics -> halloween;
+spiderbot -> spiderbotdefences1;
+spiderbotdefences1 -> spiderbotlogistics1;
+t2assistmachines -> spiderbotlogistics1;
+miningupgrade1 -> miningupgrade2;
+advancedresearch -> miningupgrade2;
+miningupgrade5 -> miningupgrade6;
+minecarts1 -> minecarts3;
+alloys -> minecarts1;
+advanceddefence -> missiledefence;
+robotics1 -> robotics2;
+robotics2 -> robotics3;
+robotics3 -> robotics4;
+t1assistmachines -> robotics1;
+miningupgrade2 -> miningupgrade3;
+basedefence -> advanceddefence;
+t4defence1 -> t4defence5;
+advancedresearch -> mothballed;
+miningupgrade3 -> miningupgrade4;
+suitupgrades -> coldresearch;
+t2assistmachines -> cargolift2;
+minecarts1 -> cargolift2;
+cargolift2 -> cargolift3;
+t4oreextracting -> cargolift3;
+t2power -> t3power;
+advancedresearch -> t3power;
+t3power -> t4power;
+advancedresearch -> t4power;
+locallifeforms -> basedefence;
+t1power -> basedefence;
+t4power -> t5power;
+advancedresearch -> t5power;
+t4defence1 -> t4defence4;
+t4defence1 -> t4defence3;
+basedefence -> spiderbot;
+t1assistmachines -> spiderbot;
+t1power -> t2power;
+basebuilding -> t1power;
+t4defence1a -> t4defence2;
+t4magmabore -> t48lightsinthedark;
+t4oreextracting -> t4drills2;
+t4particles -> t4drills2;
+t4defence4 -> t4magmabore;
+t4defence3 -> t4magmabore;
+t4defence2 -> t4magmabore;
+t4magmabore -> t4drills3;
+t4drills2 -> t4drills3;
+locallifeforms -> anthropologicalosteology;
+blackbox -> locallifeforms;
+crystal -> biomass;
+t4defence1 -> t4defence1a;
+t4start -> t4defence1;
+orbitalpower -> orbitalrailgun;
+rocketry1 -> orbitalrailgun;
+orbitalpower -> rocketry1;
+rooms1 -> roomsherb;
+t4start -> t4oreextracting;
+miningupgrade1 -> t1assistmachines;
+t0assistmachines -> t1assistmachines;
+t5power -> t4gtpower;
+advancedresearch -> t4gtpower;
+t4oreextracting -> t4gtpower;
+t4start -> t4particles;
+t5assistmachines -> t6assistmachines;
+t4gtpower -> t6assistmachines;
+t4particles -> t6assistmachines;
+t1assistmachines -> t2assistmachines;
+advancedresearch -> t2assistmachines;
+t4assistmachines -> t5assistmachines;
+resinhandling -> t5assistmachines;
+t2assistmachines -> t3assistmachines;
+t3assistmachines -> t4assistmachines;
+resinhandling -> t4assistmachines;
+rooms1 -> roomspretty;
+rooms1 -> rooms2;
+blackbox -> aesthetics;
+basebuilding -> aesthetics;
+t1assistmachines -> rooms1;
+blackbox -> basebuilding;
+rooms2 -> roomsclean;
+basebuilding -> t0assistmachines;
+alloys -> crystal;
+blackbox -> suitupgrades;
+t0assistmachines -> suitupgrades;
+alloys -> advancedcrystal;
+crystal -> advancedcrystal;
+t0assistmachines -> miningupgrade1;
+suitupgrades -> advancedresearch;
+miningupgrade1 -> advancedresearch;
+coldresearch -> cyrogenicsresearch;
+crystal -> orbitalpower;
+biomass -> orbitalpower;
+miningupgrade4 -> miningupgrade5;
+cyrogenicsresearch -> t4start;
+miningupgrade5 -> t4start;
+orbitalpower -> t4start;
+}

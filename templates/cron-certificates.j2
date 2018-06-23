@@ -1,0 +1,7 @@
+MAILTO="{{letsencrypt_crontab_mailto}}"
+
+{% for cmd in register_cmds.split('\n') %}
+{{ crond_renew_time }} root {{ cmd }} renew | logger -t lego
+{%endfor%}
+
+{{ crond_update_time }} root {{ crond_after_update_command }}
